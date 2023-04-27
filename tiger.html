@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adopt a Stray Dog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to  Adopt to Care</h1>
+    <p>Find your perfect furry friend today!</p>
+  </header>
+  
+  <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#About us">About us</a>
+        <a href="#contact">contact</a>
+    </nav>
+	
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="#" class="fas fa" id="home-btn"></a>
+        <div class="fas fa-user" id="contact-btn"></div>
+		<div class="fas fa-bars" id="about-btn"></div>
+		
+    </div>
+
+  
+  <section id="available-dogs">
+    <h2>Available Dogs</h2>
+    <ul>
+      <li>
+        <img src="mae2.jpeg" alt="Adam's Photo">
+        <div class="dog-info">
+          <h3>Adam</h3>
+          <p>Age: 1 year</p>
+          <p>Breed: Aspin</p>
+          <p>Gender: Male</p>
+          <p>Size: Small</p>
+          <p>Personality: Friendly and playful</p>
+        </div>
+        <button onclick="adoptDog('Adam')">Adopt Adam</button>
+      </li>
+	  
+      <li>
+        <img src="one.jpeg" alt="Panda's Photo">
+        <div class="dog-info">
+          <h3>Panda</h3>
+          <p>Age: 2 years</p>
+          <p>Breed: Aspin</p>
+          <p>Gender: Female</p>
+          <p>Size: Medium</p>
+          <p>Personality: Energetic and affectionate</p>
+        </div>
+        <button onclick="adoptDog('Panda')">Adopt Panda</button>
+      </li>
+	  <li>
+        <img src="mae1.jpeg" alt="Jerry's Photo">
+        <div class="dog-info">
+          <h3>Jeryy</h3>
+          <p>Age: 1 year old</p>
+          <p>Breed: Aspin</p>
+          <p>Gender: Male</p>
+          <p>Size: Small</p>
+          <p>Personality: Hyper and playful</p>
+        </div>
+        <button onclick="adoptDog('Jerry')">Adopt Jerry</button>
+      </li>
+      <!-- Add more available dogs here -->
+    </ul>
+  <section class="about" id="about">
+
+    <div class="image">
+        <img src="C:\Users\User\Downloads\.jpg" alt="">
+    </div>
+    <div>
+    <h1><b>A little information about us</b></h1>
+    <p>This website is made for people who plan to adopt street dogs who have lost their owners and have nothing to eat and are experiencing thirst and hunger on the street because no one cares for them. So we took them to treat them, take care of them, feed them, and give them a family that will take care of them. Apart from that, our website also offers the services that can be seen below, and we also sell food and other things that dogs need. Your purchase from our shop will help support those in need of dogs that are in our care.</p>   
+    <h1><b>Our Goal</h1></b>
+    <p>Our goal here is to help the poor dogs to be found by a family and given food and shelter, we get them from the streets or mountains where they have been abused or neglected before we give them to those who are willing to adopt, we first make sure that the adopter has the ability to care for and love the dog. one of the reasons why this group was created is to introduce our own breed of dog to our countrymen instead of buying an expensive dog, it is better to adopt, you can help the poor dogs and we make sure that before we give them to Your dog is safe and has been vaccinated</p>
+    
+    </div>
+ <!-- about us end here -->
+	
+	   <button onclick="Contact us for Inquires">Contact us for Inquires</button>
+       <li><h4>Email:adoptcare@gmail.com</h4></li>
+       <li><h4>09979461491/09605198826</h4></li>
+
+</section>
+
+	
+	
+	
+  </section>
+  <section id="adoption-form">
+    <h2>Adoption Form</h2>
+    <form id="adoption-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" required>
+      <label for="dog-name">Dog Name:</label>
+      <input type="text" id="dog-name" readonly>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2023 Dog Adoption Center. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // JavaScript code for handling click events
+    function adoptDog(dogName) {
+      document.getElementById('dog-name').value = dogName;
+    }
+
+    document.getElementById('adoption-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Add your logic for form submission here
+      // You can access form data using document.getElementById('<element-id>').value
+      // For example: document.getElementById('name').value to get the value of the 'Name' input field
+      // You can use AJAX or submit the form to a server-side script for processing
+    });
+  </script>
+</body>
+</html>

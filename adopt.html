@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adopt a Stray Dog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to our Dog Adoption Center</h1>
+    <p>Find your perfect furry friend today!</p>
+  </header>
+  <section id="available-dogs">
+    <h2>Available Dogs</h2>
+    <ul>
+      <li>
+        <img src="buddy.jpg" alt="Buddy's Photo">
+        <div class="dog-info">
+          <h3>Buddy</h3>
+          <p>Age: 3 years</p>
+          <p>Breed: Labrador Retriever</p>
+          <p>Gender: Male</p>
+          <p>Size: Large</p>
+          <p>Personality: Friendly and playful</p>
+        </div>
+        <button onclick="adoptDog('Buddy')">Adopt Buddy</button>
+      </li>
+      <li>
+        <img src="luna.jpg" alt="Luna's Photo">
+        <div class="dog-info">
+          <h3>Luna</h3>
+          <p>Age: 2 years</p>
+          <p>Breed: Siberian Husky</p>
+          <p>Gender: Female</p>
+          <p>Size: Medium</p>
+          <p>Personality: Energetic and affectionate</p>
+        </div>
+        <button onclick="adoptDog('Luna')">Adopt Luna</button>
+      </li>
+      <!-- Add more available dogs here -->
+    </ul>
+  </section>
+  <section id="adoption-form">
+    <h2>Adoption Form</h2>
+    <form id="adoption-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" required>
+      <label for="dog-name">Dog Name:</label>
+      <input type="text" id="dog-name" readonly>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2023 Dog Adoption Center. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
